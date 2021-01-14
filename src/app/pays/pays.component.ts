@@ -13,7 +13,7 @@ export class PaysComponent implements OnInit {
 
 
   ngOnInit(): void { 
-    // this.countries = this.httpService.getCountries("");
+     this.countries = this.httpService.getAllCountries();
   // console.log (this.countries);
     
   }

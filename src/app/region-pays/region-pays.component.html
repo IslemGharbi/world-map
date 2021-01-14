@@ -10,8 +10,11 @@
         />
         <ul class="list-group">
             <li class="list-group-item">
+                {{country.nativeName}}<br>
                 {{country.name}}
-
+                <a [routerLink]="['../../country',country.name]" class="nav-link">
+                    More details
+                </a>
             </li>
         </ul>
         </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nave',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nave.component.css']
 })
 export class NaveComponent implements OnInit {
-
-  constructor() { }
+pay='';
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+  recherche(){
+    this.router.navigate(['countries/region',this.pay])
   }
 
 }

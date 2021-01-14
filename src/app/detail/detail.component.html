@@ -1,1 +1,33 @@
-<p>detail works!</p>
+<div *ngFor="let pay of country" class="center">
+    <h4>
+        {{pay.name}} : {{pay.nativeName}} 
+
+    </h4>
+    <img
+    class="rounded-circle"
+    src="{{ pay.flag }}"
+    alt="{{ pay.name }}"
+    width="350px"
+    heigth="350px"
+  />
+<h4>Informations</h4>
+<ul class="list-group">
+    <li class="list-group-item">
+        <strong>nativeName : </strong> {{pay.nativeName}}<br>
+        
+        <strong> name : </strong> {{pay.name}}<br>
+
+        <strong> capital : </strong> {{pay.capital}}<br>
+
+        <strong> region : </strong> {{pay.region}}<br>
+
+        <strong> population : </strong> {{pay.population}}<br>
+
+        <strong> area :  </strong> {{pay.area}}<br>
+
+        <strong> languages </strong> {{pay.languages[0].name}}, {{pay.languages[0].nativeName}} <br>
+
+       
+    </li>
+</ul>
+</div>
